@@ -1,0 +1,181 @@
+:root {
+    --color-black: rgba(0, 0, 0, 0.906);
+    --color-white: #fff;
+    --color-vino: rgb(143, 18, 18);
+    --font-title: 'Quicksand';
+    --font-text: 'montserrat';
+    --font-btn: 'Bebas Neue';
+}
+
+body {
+    width: 100%;
+    background: url(../assets/bk-hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-black);
+    padding: .5rem 7rem;
+}
+
+.nav__img {
+    width: 10rem;
+}
+
+.nav__container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: var(--color-vino);
+    font-family: var(--font-btn);
+    font-size: 2.5rem;
+    transition: all .3s linear;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--color-white);
+    transition: .3s;
+}
+
+.nav__link--active{
+    text-decoration: underline;
+}
+
+                                        /* MAIN */
+
+.section-horario{
+    width: 90%;
+    height: 90vh;
+    margin: 5rem auto;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 2rem 0;
+}
+
+.section-container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-btn);
+    font-size: 3.5rem;
+}
+
+.horario__text-container{
+    display: grid;
+    grid-template-areas: 
+    "area1 area2";
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle{
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+.text{
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 2rem;
+}
+
+/* FOOTER */
+
+.section-footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.608);
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.subtitle--footer {
+    font-size: 2rem;
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-weight: 700;
+    text-align: center;
+}
+
+.link-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: var(--color-white);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 2rem;
+    height: 2rem;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.link:hover {
+    opacity: .8;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.link--instagram {
+    background-color: #e60000;
+}
+
+.link--facebook {
+    background-color: #1e69ff;
+}
+
+.link--whatsapp {
+    background-color: #25D366;
+}
+
+@media screen and (max-width: 780px) {
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__img{
+        width: 8rem;
+    }
+
+    .nav__container{
+        width: 100%;
+    }
+}
